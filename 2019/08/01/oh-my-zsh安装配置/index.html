@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="python,pip," />
+  <meta name="keywords" content="zsh," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="pip使用代理指定单次代理：1pip install --proxy http://username:password@proxyIP:port &amp;lt;包名&amp;gt; 可以在配置文件中添加:12[global]proxy = http://username:password@proxyIP:port">
-<meta name="keywords" content="python,pip">
+<meta name="description" content="推荐插件zsh-autosuggestions1git clone https://github.com/zsh-users/zsh-autosuggestions.git $&amp;#123;ZSH_CUSTOM&amp;#125;/plugins/zsh-autosuggestions zsh-syntax-highlighting1git clone https://github.com/zsh-user">
+<meta name="keywords" content="zsh">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pip配置">
-<meta property="og:url" content="https://weichaoo.github.io/2017/12/16/pip配置/index.html">
+<meta property="og:title" content="oh-my-zsh安装配置.md">
+<meta property="og:url" content="https://weichaoo.github.io/2019/08/01/oh-my-zsh安装配置/index.html">
 <meta property="og:site_name" content="weichaoo的博客">
-<meta property="og:description" content="pip使用代理指定单次代理：1pip install --proxy http://username:password@proxyIP:port &amp;lt;包名&amp;gt; 可以在配置文件中添加:12[global]proxy = http://username:password@proxyIP:port">
+<meta property="og:description" content="推荐插件zsh-autosuggestions1git clone https://github.com/zsh-users/zsh-autosuggestions.git $&amp;#123;ZSH_CUSTOM&amp;#125;/plugins/zsh-autosuggestions zsh-syntax-highlighting1git clone https://github.com/zsh-user">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-07T00:09:28.000Z">
+<meta property="og:updated_time" content="2019-08-01T15:54:52.014Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pip配置">
-<meta name="twitter:description" content="pip使用代理指定单次代理：1pip install --proxy http://username:password@proxyIP:port &amp;lt;包名&amp;gt; 可以在配置文件中添加:12[global]proxy = http://username:password@proxyIP:port">
+<meta name="twitter:title" content="oh-my-zsh安装配置.md">
+<meta name="twitter:description" content="推荐插件zsh-autosuggestions1git clone https://github.com/zsh-users/zsh-autosuggestions.git $&amp;#123;ZSH_CUSTOM&amp;#125;/plugins/zsh-autosuggestions zsh-syntax-highlighting1git clone https://github.com/zsh-user">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://weichaoo.github.io/2017/12/16/pip配置/"/>
+  <link rel="canonical" href="https://weichaoo.github.io/2019/08/01/oh-my-zsh安装配置/"/>
 
 
 
 
 
-  <title>pip配置 | weichaoo的博客</title>
+  <title>oh-my-zsh安装配置.md | weichaoo的博客</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://weichaoo.github.io/2017/12/16/pip配置/">
+    <link itemprop="mainEntityOfPage" href="https://weichaoo.github.io/2019/08/01/oh-my-zsh安装配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weichaoo">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">pip配置</h1>
+          <h1 class="post-title" itemprop="name headline">oh-my-zsh安装配置.md</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-16T23:18:02+08:00">
-                2017-12-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-01T23:01:45+08:00">
+                2019-08-01
               </time>
             
 
@@ -292,28 +292,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -342,19 +320,9 @@
       
 
       
-        <h4 id="pip使用代理"><a href="#pip使用代理" class="headerlink" title="pip使用代理"></a>pip使用代理</h4><p>指定单次代理：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install --proxy http://username:password@proxyIP:port &lt;包名&gt;</span><br></pre></td></tr></table></figure></p>
-<p>可以在配置文件中添加:<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[global]</span></span><br><span class="line"><span class="attr">proxy</span> = http://username:password@proxyIP:port</span><br></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<h4 id="国内pypi镜像源"><a href="#国内pypi镜像源" class="headerlink" title="国内pypi镜像源"></a>国内pypi镜像源</h4><ul>
-<li>豆瓣：<a href="https://pypi.douban.com/simple" target="_blank" rel="noopener">https://pypi.douban.com/simple</a></li>
-<li>中国科学技术大学：<a href="https://mirrors.ustc.edu.cn/pypi/web/simple/" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/pypi/web/simple/</a></li>
-<li>清华大学TUNA：<a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a></li>
-<li>阿里云：<a href="http://mirrors.aliyun.com/pypi/simple/" target="_blank" rel="noopener">http://mirrors.aliyun.com/pypi/simple/</a></li>
-</ul>
-<p>在配置文件配置：<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[global]</span></span><br><span class="line"><span class="attr">index-url</span> = http://pypi.douban.com/simple</span><br><span class="line"><span class="attr">trusted-host</span> = pypi.douban.com</span><br></pre></td></tr></table></figure></p>
-<p>指定单次安装源：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install &lt;包名&gt; -i http://pypi.douban.com/simple</span><br></pre></td></tr></table></figure></p>
-<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>在linux和macos，配置文件为：$HOME/.pip/pip.conf<br>在windows上，配置文件为：%HOME%\pip\pip.ini  </p>
-<p>配置样例：<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[global]</span></span><br><span class="line"><span class="attr">index-url</span> = http://pypi.douban.com/simple</span><br><span class="line"><span class="attr">trusted-host</span> = pypi.douban.com</span><br><span class="line"><span class="attr">disable-pip-version-check</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">timeout</span> = <span class="number">120</span></span><br><span class="line"></span><br><span class="line"><span class="section">[install]</span></span><br><span class="line"><span class="attr">ignore-installed</span> = <span class="literal">true</span></span><br><span class="line"><span class="comment"># 不自动安装依赖的时候设置此选项</span></span><br><span class="line"><span class="comment"># no-dependencies = yes</span></span><br><span class="line"></span><br><span class="line"><span class="section">[list]</span></span><br><span class="line"><span class="attr">format</span> = columns</span><br></pre></td></tr></table></figure></p>
+        <h3 id="推荐插件"><a href="#推荐插件" class="headerlink" title="推荐插件"></a>推荐插件</h3><h4 id="zsh-autosuggestions"><a href="#zsh-autosuggestions" class="headerlink" title="zsh-autosuggestions"></a>zsh-autosuggestions</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/zsh-users/zsh-autosuggestions.git $&#123;ZSH_CUSTOM&#125;/plugins/zsh-autosuggestions</span><br></pre></td></tr></table></figure>
+<h4 id="zsh-syntax-highlighting"><a href="#zsh-syntax-highlighting" class="headerlink" title="zsh-syntax-highlighting"></a>zsh-syntax-highlighting</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM&#125;/plugins/zsh-syntax-highlighting</span><br></pre></td></tr></table></figure>
+<h3 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br><span class="line"></span><br><span class="line">plugins=(git mvn z extract zsh-autosuggestions zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -372,9 +340,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag"># python</a>
-          
-            <a href="/tags/pip/" rel="tag"># pip</a>
+            <a href="/tags/zsh/" rel="tag"># zsh</a>
           
         </div>
       
@@ -387,15 +353,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/06/10/第一个go程序/" rel="next" title="第一个go程序.md">
+                <i class="fa fa-chevron-left"></i> 第一个go程序.md
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/10/第一个go程序/" rel="prev" title="第一个go程序.md">
-                第一个go程序.md <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -527,7 +493,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#pip使用代理"><span class="nav-number">1.</span> <span class="nav-text"><a href="#pip&#x4F7F;&#x7528;&#x4EE3;&#x7406;" class="headerlink" title="pip&#x4F7F;&#x7528;&#x4EE3;&#x7406;"></a>pip&#x4F7F;&#x7528;&#x4EE3;&#x7406;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#国内pypi镜像源"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x56FD;&#x5185;pypi&#x955C;&#x50CF;&#x6E90;" class="headerlink" title="&#x56FD;&#x5185;pypi&#x955C;&#x50CF;&#x6E90;"></a>&#x56FD;&#x5185;pypi&#x955C;&#x50CF;&#x6E90;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置文件"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="headerlink" title="&#x914D;&#x7F6E;&#x6587;&#x4EF6;"></a>&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐插件"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x63A8;&#x8350;&#x63D2;&#x4EF6;" class="headerlink" title="&#x63A8;&#x8350;&#x63D2;&#x4EF6;"></a>&#x63A8;&#x8350;&#x63D2;&#x4EF6;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#zsh-autosuggestions"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#zsh-autosuggestions" class="headerlink" title="zsh-autosuggestions"></a>zsh-autosuggestions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#zsh-syntax-highlighting"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#zsh-syntax-highlighting" class="headerlink" title="zsh-syntax-highlighting"></a>zsh-syntax-highlighting</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件配置"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x63D2;&#x4EF6;&#x914D;&#x7F6E;" class="headerlink" title="&#x63D2;&#x4EF6;&#x914D;&#x7F6E;"></a>&#x63D2;&#x4EF6;&#x914D;&#x7F6E;</span></a></li></ol></div>
             
 
           </div>
